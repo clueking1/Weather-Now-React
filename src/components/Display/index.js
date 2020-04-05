@@ -10,6 +10,9 @@ function Display(props) {
     let iconurl = "http://openweathermap.org/img/w/" + info.icon + ".png";
     return (
         <div className="displayWrapper">
+            <div className='citStateDiv'>
+               <h3>{info.stateCity}</h3>
+           </div>
            <div className='dateDiv'>
                <h3>{month}/{day}</h3>
            </div>

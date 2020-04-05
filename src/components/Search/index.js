@@ -35,7 +35,8 @@ function Search() {
                     humid : Math.floor(res.data.main.humidity),
                     wind : Math.floor(res.data.wind.speed),
                     icon : res.data.weather[0].icon,
-                    descrip : res.data.weather[0].description
+                    descrip : res.data.weather[0].description,
+                    stateCity : `${city}, ${usstate}`
                   })
             })
             
