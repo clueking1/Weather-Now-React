@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from './components/Header'
-import Display from './components/Display'
+import Search from './components/Search'
 
 function App() {
   return (
     <div>
       <Header />
-      <Display />
+      <Search />
     </div>
   )
 }
