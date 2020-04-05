@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import API from '../../utils/weatherAPI'
 import Display from '../Display'
 import './style.css'
 
 function Search() {
-    const [city, setCity] = useState('')
-    const [usstate, setUsState] = useState('')
+    const [city, setCity] = useState('Cleveland')
+    const [usstate, setUsState] = useState('Ohio')
     const [displayInfo, setDisplayInfo] = useState({
       temp : '',
       tempFeels : '',
@@ -15,6 +15,10 @@ function Search() {
       wind : '',
       icon : '',
       descrip : ''
+    })
+
+    useEffect(() => {
+        searchAPI()
     })
 
 
