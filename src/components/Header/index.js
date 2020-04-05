@@ -8,7 +8,7 @@ function Header() {
     <header className='head'>
         <h1 className='headTitle'>Weather Now</h1>
     </header>
-    )
+  )
 }
 
 export default Header
