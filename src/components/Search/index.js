@@ -25,14 +25,14 @@ function Search() {
     function searchAPI() {
         API.searchTerms(`${city},${usstate}`)
             .then(res => {
-
+               
                 setDisplayInfo({
-                    temp : res.data.main.temp,
-                    tempFeels : res.data.main.feels_like,
-                    tempMin : res.data.main.temp_min,
-                    tempMax : res.data.main.temp_max,
-                    humid : res.data.main.humidity,
-                    wind : res.data.wind.speed,
+                    temp : Math.floor(res.data.main.temp),
+                    tempFeels : Math.floor(res.data.main.feels_like),
+                    tempMin : Math.floor(res.data.main.temp_min),
+                    tempMax : Math.floor(res.data.main.temp_max),
+                    humid : Math.floor(res.data.main.humidity),
+                    wind : Math.floor(res.data.wind.speed),
                     icon : res.data.weather[0].icon,
                     descrip : res.data.weather[0].description
                   })
@@ -44,10 +44,10 @@ function Search() {
 
     return (
         <div>
-            <div className='displayWrapper'>
-                <div className='displayFormWrapper'>
+            <div className='searchWrapper'>
+                <div className='searchFormWrapper'>
                     <form onSubmit={handleSubmit}>
-                        <div className='displayCity'>
+                        <div className='searchCity'>
                             <input 
                                 className='form-control'
                                 type='text'
@@ -56,7 +56,7 @@ function Search() {
                                 onChange={e => setCity(e.target.value)}
                             />
                         </div>
-                        <div className='displayState'>
+                        <div className='searchState'>
                             <input 
                                 className='form-control'
                                 type='text'
