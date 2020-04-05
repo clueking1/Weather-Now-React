@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 function Display(props) {
 
@@ -11,10 +12,10 @@ function Display(props) {
     return (
         <div className="displayWrapper">
             <div className='citStateDiv'>
-               <h3>{info.stateCity}</h3>
+               <h3 className='stateHead'>{info.stateCity}</h3>
            </div>
            <div className='dateDiv'>
-               <h3>{month}/{day}</h3>
+               <h3 className='dateText'>{month}/{day}</h3>
            </div>
            <div className='iconDiv'>
                <img src= {iconurl} alt= 'icon'/>
