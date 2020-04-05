@@ -1,0 +1,47 @@
+.searchWrapper {
+    height: 350px;
+    width: 100%;
+}
+
+.bgImg {
+    height: 100%;
+    background-image: url('./imgs/Cloudy.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.searchFormWrapper {
+    height: 400px
+}
+
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.searchCity {
+    margin-bottom: 10px;
+
+    
+}
+
+.searchState {
+    margin-bottom: 10px;
+
+}
+
+input {
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+button {
+    width: 150px;
+    padding: 8px 0;
+}

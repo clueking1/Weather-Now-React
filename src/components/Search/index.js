@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import API from '../../utils/weatherAPI'
 import Display from '../Display'
+import './style.css'
 
 function Search() {
     const [city, setCity] = useState('')
@@ -45,6 +46,7 @@ function Search() {
     return (
         <div>
             <div className='searchWrapper'>
+                <div className='bgImg'>
                 <div className='searchFormWrapper'>
                     <form onSubmit={handleSubmit}>
                         <div className='searchCity'>
@@ -69,6 +71,7 @@ function Search() {
                             Get Weather!
                         </button>
                     </form>
+                </div>
                 </div>
             </div>
             <div>
