@@ -1,13 +1,25 @@
 import React, { useState } from 'react'
+import API from '../../utils/weatherAPI'
 
 function Search() {
     const [city, setCity] = useState('')
     const [usstate, setUsState] = useState('')
 
+
     function handleSubmit(e) {
         e.preventDefault()
-        alert(`${city},${usstate}`)
+        searchAPI()
     }
+
+    function searchAPI() {
+        API.searchTerms(`${city},${usstate}`)
+            .then(res => {
+                console.log(res.data)
+            })
+            
+    }
+
+
 
     return (
         <div className='displayWrapper'>
