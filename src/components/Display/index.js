@@ -9,7 +9,7 @@ function Display(props) {
     let date = new Date()
     let month = date.getMonth() + 1
     let day = date.getDate()
-    let iconurl = "http://openweathermap.org/img/w/" + info.icon + ".png";
+    let iconurl = "https://openweathermap.org/img/w/" + info.icon + ".png";
     return (
         <div className="displayWrapper">
           <div className='hideInfo' style={ !info.icon ? {visibility: 'hidden'} : {visibility : 'visible'}}>
