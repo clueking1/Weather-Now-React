@@ -45,3 +45,16 @@ button {
     width: 150px;
     padding: 8px 0;
 }
+
+@media only screen and (max-width: 400px) {
+    input {
+        width: 200px;
+        text-align: center;
+        padding: 7px 0;
+    }
+    
+    button {
+        width: 100px;
+        padding: 5px 0;
+    } 
+  }
