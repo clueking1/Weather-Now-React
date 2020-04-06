@@ -5,12 +5,14 @@ function Display(props) {
 
     const { info } = props
 
+
     let date = new Date()
     let month = date.getMonth() + 1
     let day = date.getDate()
     let iconurl = "http://openweathermap.org/img/w/" + info.icon + ".png";
     return (
         <div className="displayWrapper">
+          <div className='hideInfo' style={ !info.icon ? {visibility: 'hidden'} : {visibility : 'visible'}}>
             <div className='citStateDiv'>
                <h3 className='stateHead'>{info.stateCity}</h3>
            </div>
@@ -45,7 +47,10 @@ function Display(props) {
            <div className='windDiv'>
                <p className='windP'>{info.wind}mph</p>
            </div>
-
+           </div>
+           <div className='alert' style={ !info.icon ? {visibility: 'visible'} : {visibility : 'hidden'}}>
+               <p>This search failed! Please check spelling!</p>
+           </div>
         </div>
     )
 }
