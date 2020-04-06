@@ -111,3 +111,72 @@ img {
     margin-left: 46%;
     
 }
+
+@media only screen and (max-width: 550px) {
+    .displayWrapper {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        border: 2px solid rgb(144, 151, 151);
+        margin: 0 auto;
+    }
+
+    .windHeadDiv {
+        width: 15%;
+       
+        margin: 0 auto;
+        margin-top: -30.5%;
+        margin-left: 70%;
+        
+    }
+
+    .humidHeadDiv {
+        width: 15%;
+       
+        margin: 0 auto;
+        margin-top: -25%;
+    }
+
+    .tempP {
+        width: 80%;
+        font-size: 3.3em;
+        text-align: right;
+        margin-top: -30px;
+    }
+
+    .feelsTempDiv {
+        width: 20%;
+        margin-top: -130px;
+        text-align: center;
+    }
+    
+    .maxTempDiv {
+        width: 20%;
+        margin-top: -20px;
+        text-align: center;
+        font-size: .9em;
+    }
+    
+    .minTempDiv {
+        width: 20%;
+        margin-top: -20px;
+        text-align: center;
+        font-size: .8em;
+    }
+
+    img {
+        width: 1000px;
+        height: 100px;
+        margin-top: -50px;
+    }
+
+    .dateDiv {
+        width: 30%;
+        height: 25%;
+        margin-top: -34px;
+        border-bottom: 2px solid rgb(144, 151, 151);
+        border-right: 2px solid rgb(144, 151, 151)
+        
+    }
+
+  }

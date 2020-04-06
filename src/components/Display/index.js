@@ -15,7 +15,7 @@ function Display(props) {
                <h3 className='stateHead'>Cleveland, Ohio</h3>
            </div>
            <div className='dateDiv'>
-               <h3 className='dateText'>4/5</h3>
+               <h3 className='dateText'>4/15</h3>
            </div>
            <div className='iconDiv'>
                <img src= {iconurl} alt= 'icon'/>
