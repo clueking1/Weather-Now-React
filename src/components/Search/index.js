@@ -4,8 +4,8 @@ import Display from '../Display'
 import './style.css'
 
 function Search() {
-    const [city, setCity] = useState('Cleveland')
-    const [usstate, setUsState] = useState('Ohio')
+    const [city, setCity] = useState('')
+    const [usstate, setUsState] = useState('')
     const [displayInfo, setDisplayInfo] = useState({
       temp : '',
       tempFeels : '',
